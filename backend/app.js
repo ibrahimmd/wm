@@ -118,51 +118,5 @@ function sleep(ms) {
 }   
 
 
-// app.get('/', function (req, res) {
-//     res.render('home');
-// });
-
-// app.get('/get', function (req, res) {
-
-//     if(_.isEmpty(req.query.username)) {
-//         res.render('error', { error_message: 'username not set'});
-//     }
-//     else {
-//         User.findOne({ where: { username: req.query.username } })
-//             .then(user => { 
-//                 if(_.isObject(user)) {
-//                     res.status(200).render('data', { name: user.name, lastname: user.lastname });
-//                 }                
-//                 else if(_.isNull(user)) {
-//                     res.status(200).render('error', { error_message: `User not found`});
-//                 }
-//                 else {                    
-//                     res.status(200).render('error', { error_message: `User not found`});
-//                 }                
-//             })
-//             .catch(err => {
-//                 console.log("error:"+err)
-//                 res.status(400).render('error', { error_message: `error getting data`});
-//             })
-//         //res.render('get', { message: 'not empty'});
-//     }
-    
-// });
-
-// app.get('/set', function (req, res) {    
-//     // FIXME: no sanity checks performed on input
-//     if(_.isEmpty(req.query.username) || _.isEmpty(req.query.name) || _.isEmpty(req.query.lastname)) {
-//         res.status(400).render('error', { error_message: 'username, name, or lastname not set'});
-//     }else {
-//         User.create({username: req.query.username, name: req.query.name, lastname: req.query.lastname})
-//             .then(user => {                
-//                 res.status(200).render('info', { info_message: `user ${user.username} saved`});                                   
-//             })
-//             .catch(err => {                                
-//                 res.status(400).render('error', { error_message: `user ${req.query.username} not saved`});
-//             })        
-//     }
-    
-// });
 
 app.listen(8000);
