@@ -1,0 +1,14 @@
+{
+  "app": {
+     "listen_port": 8000,
+     "db": {
+        "type": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "username": "demouser",
+        "password": "password",
+        "database": "demodb"
+     }
+  }
+}
+
