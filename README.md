@@ -23,7 +23,7 @@ docker-compose -f docker-compose.test.yml up
 
 - Start node app
 ```
-npm start
+npm install; npm start
 ```
 
 
@@ -36,5 +36,5 @@ cd frontend
 
 - Start react
 ```
-npm start
+npm install; npm start
 ```
